@@ -1,0 +1,1191 @@
+/* =========================================
+   AURONIX AUTOMATION
+   Complete Website Styling
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080a08;
+  color: #f1f3ed;
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  padding: 24px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1d211d;
+  background: #080a08;
+  position: relative;
+  z-index: 10;
+}
+
+.logo,
+.auth-logo {
+  color: #c9ff36;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aeb4aa;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #c9ff36;
+}
+
+.quote-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #c9ff36;
+  color: #080a08;
+  padding: 13px 20px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.quote-btn:hover {
+  opacity: 0.85;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  max-width: 1400px;
+  min-height: 680px;
+  margin: auto;
+  padding: 100px 5%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.eyebrow,
+.section-label {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 25px 0;
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.91;
+  letter-spacing: -5px;
+  font-weight: 800;
+}
+
+.hero p {
+  max-width: 650px;
+  color: #929991;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 22px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-btn {
+  background: #c9ff36;
+  color: #080a08;
+  border: 1px solid #c9ff36;
+}
+
+.primary-btn:hover {
+  opacity: 0.85;
+}
+
+.secondary-btn {
+  color: #f1f3ed;
+  border: 1px solid #343a34;
+}
+
+.secondary-btn:hover {
+  border-color: #c9ff36;
+  color: #c9ff36;
+}
+
+/* =========================================
+   SCADA CARD
+========================================= */
+
+.scada-card {
+  border: 1px solid #343934;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 255, 54, 0.04),
+      transparent
+    ),
+    #0d100d;
+  padding: 25px;
+  min-height: 360px;
+  position: relative;
+  box-shadow: 0 0 80px rgba(201, 255, 54, 0.04);
+}
+
+.scada-card::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border: 1px solid #1f241f;
+  pointer-events: none;
+}
+
+.scada-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  font-family: monospace;
+  font-size: 10px;
+  color: #80877e;
+}
+
+.scada-top span:last-child {
+  color: #c9ff36;
+}
+
+.scada-main {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scada-main small {
+  display: block;
+  color: #777e75;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.scada-main strong {
+  display: block;
+  font-family: monospace;
+  color: #f1f3ed;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.scada-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #c9ff36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scada-circle span {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 22px;
+}
+
+.scada-circle small {
+  margin-top: 5px;
+}
+
+.scada-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: 10px;
+  color: #7d847a;
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats {
+  max-width: 1400px;
+  margin: auto;
+  padding: 45px 5%;
+  border-top: 1px solid #202420;
+  border-bottom: 1px solid #202420;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stats div {
+  padding: 10px 25px;
+  border-right: 1px solid #202420;
+}
+
+.stats div:last-child {
+  border-right: none;
+}
+
+.stats strong {
+  display: block;
+  color: #c9ff36;
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.stats span {
+  color: #777e75;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.services-section {
+  max-width: 1400px;
+  margin: auto;
+  padding: 130px 5%;
+}
+
+.services-section h2 {
+  font-size: clamp(45px, 6vw, 80px);
+  line-height: 0.95;
+  letter-spacing: -4px;
+  margin: 20px 0;
+}
+
+.section-description {
+  color: #858c83;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 55px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.service-card {
+  min-height: 280px;
+  border: 1px solid #242924;
+  padding: 30px;
+  position: relative;
+  transition: 0.25s;
+}
+
+.service-card:hover {
+  border-color: #c9ff36;
+  transform: translateY(-3px);
+}
+
+.service-number {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.service-card h3 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.service-card p {
+  color: #838a81;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #c9ff36;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta-section {
+  max-width: 1400px;
+  margin: auto;
+  padding: 90px 5%;
+  border-top: 1px solid #242924;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.cta-section h2 {
+  font-size: clamp(45px, 6vw, 75px);
+  line-height: 0.95;
+  letter-spacing: -4px;
+  margin: 20px 0;
+}
+
+.cta-section p {
+  color: #858c83;
+  line-height: 1.7;
+  max-width: 550px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  border-top: 1px solid #202420;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #5e655c;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   AUTH / LOGIN / REGISTER
+========================================= */
+
+.auth-page {
+  min-height: 100vh;
+  background: #080a08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  background: #101310;
+  border: 1px solid #292e29;
+  padding: 50px;
+}
+
+.auth-logo {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.auth-card h1 {
+  margin: 15px 0;
+  font-size: 45px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.auth-card > p {
+  color: #858c83;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  color: #777e75;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin: 17px 0 8px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 16px;
+  background: #080a08;
+  border: 1px solid #303630;
+  color: #ffffff;
+  outline: none;
+  font-size: 14px;
+}
+
+.auth-card input:focus {
+  border-color: #c9ff36;
+}
+
+.auth-submit {
+  margin-top: 25px;
+  width: 100%;
+  padding: 17px;
+  background: #c9ff36;
+  border: 1px solid #c9ff36;
+  color: #080a08;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  opacity: 0.85;
+}
+
+.form-error {
+  margin-top: 15px;
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 13px !important;
+  margin-top: 28px !important;
+}
+
+.auth-switch a {
+  color: #c9ff36;
+}
+
+/* =========================================
+   SERVICES PORTAL
+========================================= */
+
+.portal-page {
+  min-height: 100vh;
+  background: #080a08;
+  color: #f1f3ed;
+}
+
+.portal-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 30px 80px;
+}
+
+.portal-header h1 {
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.95;
+  letter-spacing: -4px;
+  margin: 20px 0;
+}
+
+.portal-header p {
+  color: #858c83;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.service-list {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-detail-card {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 25px;
+  border: 1px solid #252a25;
+  padding: 40px;
+  transition: 0.25s;
+}
+
+.service-detail-card:hover {
+  border-color: #c9ff36;
+}
+
+.service-detail-number {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.service-detail-card h2 {
+  margin: 0 0 15px;
+  font-size: 35px;
+}
+
+.service-detail-card p {
+  max-width: 750px;
+  color: #858c83;
+  line-height: 1.7;
+}
+
+.service-detail-card ul {
+  padding-left: 20px;
+  color: #aeb4aa;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.service-detail-card li::marker {
+  color: #c9ff36;
+}
+
+/* =========================================
+   SERVICE DETAILS
+========================================= */
+
+.service-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 30px 100px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #777e75;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 11px;
+  margin-bottom: 70px;
+}
+
+.back-link:hover {
+  color: #c9ff36;
+}
+
+.service-page h1 {
+  max-width: 1000px;
+  font-size: clamp(55px, 8vw, 105px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+  margin: 25px 0;
+}
+
+.service-intro {
+  max-width: 800px;
+  color: #aeb4aa;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.service-overview {
+  margin: 80px 0 50px;
+  padding: 10px 0 10px 25px;
+  border-left: 2px solid #c9ff36;
+}
+
+.service-overview h2 {
+  font-size: 28px;
+}
+
+.service-overview p {
+  max-width: 800px;
+  color: #858c83;
+  line-height: 1.8;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.info-box {
+  min-height: 320px;
+  padding: 30px;
+  border: 1px solid #252a25;
+}
+
+.info-box > span {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.info-box h3 {
+  margin-top: 35px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.info-box ul {
+  padding-left: 20px;
+  color: #969d94;
+  line-height: 2;
+}
+
+.info-box li::marker {
+  color: #c9ff36;
+}
+
+.service-request {
+  margin-top: 60px;
+  padding: 45px;
+  border: 1px solid #252a25;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.service-request h2 {
+  margin: 10px 0;
+  font-size: 38px;
+}
+
+.service-request p {
+  color: #858c83;
+  line-height: 1.6;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+  }
+
+  .scada-card {
+    max-width: 650px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .quote-btn {
+    padding: 11px 14px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+    gap: 45px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 20px;
+  }
+
+  .stats div {
+    border-right: none;
+    border-bottom: 1px solid #202420;
+    padding: 20px 10px;
+  }
+
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 70px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer {
+    padding: 25px 20px;
+    flex-direction: column;
+  }
+
+  .auth-card {
+    padding: 35px 25px;
+  }
+
+  .auth-card h1 {
+    font-size: 38px;
+  }
+
+  .portal-header {
+    padding: 80px 20px 60px;
+  }
+
+  .portal-header h1 {
+    font-size: 55px;
+  }
+
+  .service-list {
+    padding: 0 20px 70px;
+  }
+
+  .service-detail-card {
+    grid-template-columns: 1fr;
+    padding: 30px 25px;
+  }
+
+  .service-page {
+    padding: 50px 20px 80px;
+  }
+
+  .service-page h1 {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .service-intro {
+    font-size: 18px;
+  }
+
+  .service-request {
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* =========================================
+   SERVICE REQUEST FORM
+========================================= */
+
+.request-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 30px 100px;
+}
+
+.request-page h1 {
+  font-size: clamp(55px, 8vw, 100px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+  margin: 30px 0;
+}
+
+.request-intro {
+  max-width: 700px;
+  color: #858c83;
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 80px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+  border: 1px solid #252a25;
+  padding: 40px;
+}
+
+.form-section-number {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.form-section-content h2 {
+  margin: 0 0 35px;
+  font-size: 28px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #777e75;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 9px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 16px;
+  background: #080a08;
+  border: 1px solid #303630;
+  color: #f1f3ed;
+  outline: none;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: #c9ff36;
+}
+
+.form-field select {
+  cursor: pointer;
+}
+
+.form-field select option {
+  background: #101310;
+  color: #ffffff;
+}
+
+.request-error {
+  border: 1px solid #7d2929;
+  background: #241010;
+  color: #ff7777;
+  padding: 16px 20px;
+  font-size: 13px;
+}
+
+.request-submit {
+  margin-top: 25px;
+  padding: 45px;
+  border: 1px solid #252a25;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.request-submit h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.request-submit p {
+  color: #858c83;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .request-page {
+    padding: 50px 20px 80px;
+  }
+
+  .request-page h1 {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .form-section {
+    grid-template-columns: 1fr;
+    padding: 28px 22px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field.full-width {
+    grid-column: auto;
+  }
+
+  .request-submit {
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* ================================
+   REQUEST SUCCESS
+================================ */
+
+.success-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 30px 120px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #c9ff36;
+  color: #c9ff36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+.success-page h1 {
+  font-size: clamp(60px, 9vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -6px;
+  margin: 25px 0;
+}
+
+.success-page h1 span {
+  color: #c9ff36;
+}
+
+.success-intro {
+  max-width: 680px;
+  color: #858c83;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 55px;
+}
+
+.request-id-card {
+  border: 1px solid #303630;
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.request-id-card div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-id-card span {
+  color: #777e75;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.request-id-card strong {
+  font-family: monospace;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.status-badge {
+  color: #c9ff36;
+  border: 1px solid #556d20;
+  background: rgba(201, 255, 54, 0.06);
+  padding: 10px 16px;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.request-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #252a25;
+}
+
+.summary-item {
+  padding: 28px 30px;
+  border-right: 1px solid #252a25;
+  border-bottom: 1px solid #252a25;
+}
+
+.summary-item:nth-child(even) {
+  border-right: none;
+}
+
+.summary-item:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.summary-item span {
+  display: block;
+  color: #777e75;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.summary-item strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.success-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 24px;
+  border: 1px solid #303630;
+  color: #f1f3ed;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.secondary-btn:hover {
+  border-color: #c9ff36;
+  color: #c9ff36;
+}
+
+.tracking-note {
+  margin-top: 70px;
+  padding: 30px;
+  border-top: 1px solid #252a25;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 20px;
+}
+
+.tracking-note > span {
+  color: #c9ff36;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.tracking-note strong {
+  font-size: 18px;
+}
+
+.tracking-note p {
+  color: #858c83;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .success-page {
+    padding: 70px 20px 90px;
+  }
+
+  .success-page h1 {
+    font-size: 58px;
+    letter-spacing: -4px;
+  }
+
+  .request-id-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .request-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-item,
+  .summary-item:nth-child(even),
+  .summary-item:nth-last-child(-n + 2) {
+    border-right: none;
+    border-bottom: 1px solid #252a25;
+  }
+
+  .summary-item:last-child {
+    border-bottom: none;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+
+  .success-actions .primary-btn,
+  .success-actions .secondary-btn {
+    width: 100%;
+  }
+}
